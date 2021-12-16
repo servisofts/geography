@@ -1,16 +1,14 @@
 import { SPageListProps } from 'servisofts-component'
+import Services from '../Services';
 
 import InicioPage from "./InicioPage";
-import pais from './pais';
-
+import Pais from './Pais';
 const Pages: SPageListProps = {
-    "inicio": InicioPage,
-    ...pais.Pages,
+    "/": InicioPage,
+    ...Services.Pages,
+    "pais": Pais
 
 }
 
 
-export const Reducers = {
-    ...pais.Reducers,
-}
 export default Pages;

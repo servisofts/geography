@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux';
 
+import Services from '../Services';
 
-import { Reducers} from '../Pages'
+import paisReducer from './paisReducer';
 const reducers = combineReducers({
-    ...Reducers
-   
+   ...Services.Reducers,
+    paisReducer,
 });
 
 export default (state, action) => {
