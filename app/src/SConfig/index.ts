@@ -22,7 +22,7 @@ const SThemeProps: SThemeThemes = {
 
 const SocketProps: SSocketProps = {
     name: 'geography',
-    host: 'geography.ss.lo',
+    host: 'alvaro.ss.lo',
     port: {
         native: 10027,
         web: 20027,

@@ -12,7 +12,7 @@ public class Manejador {
         if (!obj.isNull("component")) {
 
             switch (obj.getString("component")) {
-                case pais.component:
+                case "pais":
                     new pais(obj, session);
                     break;
             }

@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { SPage, SText } from 'servisofts-component';
+import Pages from '..';
+import BotonesPaginas from '../../Components/BotonesPaginas';
+import pais from '../pais';
 
 class InicioPage extends Component {
     constructor(props) {
@@ -12,9 +15,13 @@ class InicioPage extends Component {
     render() {
         return (
             <SPage title={'InicioPage'}>
-                
+
                 <SText>{'InicioPage'}</SText>
-                
+                <BotonesPaginas data={[
+                    { label: "Servicios", url: "servicios", icon: "Servisofts" },
+                ]} />
+
+             
             </SPage>
         );
     }
